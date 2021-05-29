@@ -2,9 +2,10 @@ import "./App.css";
 import NewExpense from "./components/Expenses/NewExpense";
 import Expense from "./components/Expenses/Expense";
 import ExpensesContainer from "./components/UI/ExpensesContainer";
+import { useState } from "react";
 
 function App() {
-  const expenses = [
+  const [expenses, setExpense] = useState([
     {
       id: "01",
       item: "Grocerry",
@@ -17,10 +18,11 @@ function App() {
       price: "600",
       date: new Date(2021, 3, 3),
     },
-  ];
+  ]);
 
   const onInsertExpenseHandler = (exp) => {
     console.log(exp);
+    setExpense((prevState) => [...prevState, exp]);
   };
 
   const expenseItem = expenses.map((exp) => (
