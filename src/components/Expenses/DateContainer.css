@@ -1,0 +1,17 @@
+.Date {
+  display: flex;
+  flex-direction: column;
+  background-color: #e4242e;
+  border: 2px solid white;
+  border-radius: 10px;
+  height: 5.5rem;
+  width: 5.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.Text {
+  color: white;
+  font-weight: 700;
+  padding: 2px;
+}

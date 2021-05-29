@@ -1,0 +1,15 @@
+.NewExpense {
+  background-color: aqua;
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  justify-content: space-between;
+}
+
+.Label {
+  font-weight: bold;
+  display: block;
+}
